@@ -1,0 +1,86 @@
+/* =============================================
+   ZAIKA RESTAURANTS — Global Styles
+   ============================================= */
+
+:root {
+  --color-bg: #0a0a08;
+  --color-surface: #111110;
+  --color-surface-2: #1a1a17;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e8c97a;
+  --color-gold-dark: #8a6f2e;
+  --color-red: #c0392b;
+  --color-cream: #f5f0e8;
+  --color-text: #e8e0d0;
+  --color-text-muted: #8a8070;
+  --color-border: rgba(201, 168, 76, 0.2);
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  --transition: all 0.3s ease;
+  --shadow-gold: 0 0 30px rgba(201, 168, 76, 0.15);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-gold-dark); border-radius: 3px; }
+
+/* Utility */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), transparent);
+  margin: 1.5rem 0;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-bg);
+}
